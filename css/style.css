@@ -2050,6 +2050,12 @@ partner */
     .main {
         max-width: 95%;
     }
+    .agenda-flex{
+        flex-direction: column;
+    }
+    .agenda-flex .agenda-ans-box{
+        width: 100%;
+    }
     .custom-nav.custom-prev.for-desktop {
         display: none!important;
     }
