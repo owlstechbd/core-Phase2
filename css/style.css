@@ -1451,7 +1451,12 @@ input[type="submit"] {
 }
 .agenda-ans h5{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.time-agenda p{
+    font-size: 18px;
+    font-weight: 500;
 }
 .agenda-ans-box{
     width: 100%;
@@ -1464,7 +1469,7 @@ input[type="submit"] {
     width: 50px;
 }
 .agenda-content{
-    width: 70%;
+    
     margin-left: 25px;
 }
 /* Popup container - hidden by default */
@@ -1483,23 +1488,25 @@ input[type="submit"] {
   .openimage-content {
     margin: auto;
     display: block;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 40%;
     position: relative;
     top: 56%;
     transform: translateY(-50%);
+  }
+  .openimage-content img{
+    width: 100%;
   }
   
   /* Close button */
   .openimage-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
-    font-size: 30px;
+    top: -9px;
+    right: 5px;
+    color: #000;
+    font-size: 41px;
     cursor: pointer;
-    z-index: 2; /* Ensure the close button is on top */
-  }
+    z-index: 2;
+}
 .tb_see_more_btn {
     color: #fff!important;
     border: #fff!important;
@@ -1524,10 +1531,7 @@ input[type="submit"] {
     font-weight: 200;
     line-height: 2.5vw;
 }
-.time-agenda{
-   position: absolute;
-   right: 0;
-}
+
 
 .gobal-btn2 button {
     font-size: 1.563vw;
@@ -1603,7 +1607,13 @@ input[type="submit"] {
     content: '\2212';
     color: #fff;
 }
-
+.agenda-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.agenda-flex .agenda-ans-box{
+    width: 48%;
+}
 .accordion-item-body {
 
     max-height: 0;
@@ -2026,6 +2036,17 @@ partner */
         background: linear-gradient(180deg, rgba(27,27,25,0.7847514005602241) 9%, rgba(27, 27, 25, 0.733) 50%), url(../images/herophone-banner2.png) top center;
         background-size: cover;
     }
+    .openimage-content{
+        max-width: 90%;
+    }
+    .openimage-close {
+        position: absolute;
+        top: -9px;
+        right: 3px;
+        color: #000;
+        font-size: 33px;
+       
+    }
     .main {
         max-width: 95%;
     }
@@ -2078,20 +2099,17 @@ partner */
     .agenda-content{
         width: 100%;
     }
-    .agenda-ans.mar-bottom {
+    .accordion-item-body-content{
         padding-bottom: 50px;
     }
     .agenda-content p {
         margin-top: 10px;
         font-size: 14px;
     }
-    .time-agenda{
-        bottom: -30px;
-        right:  0;
-    }
+    
     .agenda-ans h5 {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 25px;
     }
 
@@ -2190,6 +2208,7 @@ partner */
         font-size: 12px;
         border: none;
     }
+    
 }
 
 .leader-txt {
